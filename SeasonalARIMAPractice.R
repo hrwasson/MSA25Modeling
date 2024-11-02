@@ -24,11 +24,6 @@ library(dplyr) # For data manipulation
 library(lubridate) # For date/time manipulation
 library(forecast) # For time series modeling
 
-# Load training, validation, and test datasets
-train <- read_csv("~/Downloads/Homework1_TS2/hrl_load_metered.csv")
-validation <- read_csv("~/Downloads/Homework1_TS2/hrl_load_metered - test1.csv")
-test <- read_csv("~/Downloads/hrl_load_metered - test2.csv")
-
 # Preprocess the training dataset by converting datetime column
 energy.train1 <- train %>%
   mutate(
