@@ -62,9 +62,6 @@ rpart.plot(BC.tree)
 print(paste("Accuracy (Decision Tree):", 1 - 0.2834275))
 
 # Logistic regression model (for comparison)
-library(tidyverse)
-train <- read_csv("~/Downloads/Homework3_LR/insurance_t_bin.csv")
-validation <- read_csv("~/Downloads/Homework3_LR/insurance_v_bin.csv")
 
 # Fit logistic regression model
 f.model <- glm(INS ~ DDA + NSF + IRA + INV + MTG + CC + DDABAL_BIN + CHECKS_BIN + 
