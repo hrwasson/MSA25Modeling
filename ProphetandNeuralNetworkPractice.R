@@ -13,12 +13,6 @@ library(epiDisplay)
 library(dplyr) # Data manipulation
 library(lubridate) # Date and time manipulation
 
-# Read in datasets for training, validation, and testing
-train <- read_csv("~/Downloads/Homework1_TS2/hrl_load_metered.csv")
-validation <- read_csv("~/Downloads/Homework1_TS2/hrl_load_metered - test1.csv")
-test <- read_csv("~/Downloads/hrl_load_metered - test2.csv")
-test2 <- read_csv("~/Downloads/hrl_load_metered - test3.csv")
-
 # Combine datasets to form the full training set
 full_train <- rbind(train, validation, test)
 
