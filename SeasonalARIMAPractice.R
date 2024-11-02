@@ -1,13 +1,16 @@
-#The objective of this analysis is to forecast electricity 
-#load (measured in megawatts, MW) over time, using historical data 
-#to model and predict future consumption patterns. By applying various
-#time series decomposition and forecasting techniques, including Exponential
-#Smoothing State Space (ETS) and ARIMA models with seasonal adjustments, we
-#aim to identify the most accurate model for predicting energy demand. Additionally, 
-#seasonal and trend decomposition via STL and Fourier series analysis are employed 
-#to capture recurring patterns, which enhances the model's predictive power. 
-#This information supports effective energy planning and resource allocation by 
-#anticipating demand fluctuations.
+# My objective in this analysis is to forecast electricity load (MW) over time:
+# - Use historical data to model and predict future consumption patterns
+# - Apply time series decomposition and forecasting techniques
+#     - Techniques include Exponential Smoothing State Space (ETS) and ARIMA with seasonal adjustments
+# - Aim to identify the most accurate model for predicting energy demand
+
+# Additional methods:
+# - Use STL and Fourier series decomposition to capture recurring patterns
+# - Enhance model accuracy by leveraging seasonal and trend components
+
+# Purpose of analysis:
+# - Support effective energy planning and resource allocation
+# - Enable anticipation of demand fluctuations to optimize resource use
 
 
 # Load required libraries for data manipulation, time series analysis, and plotting
